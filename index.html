@@ -37,9 +37,23 @@
       user-select: none;
     }
 
-    .hotspot {
+    .overview-material {
       position: absolute;
       z-index: 2;
+      left: 5.55%;
+      top: 17.23%;
+      color: rgba(255, 255, 255, 0.72);
+      font-size: clamp(5px, 0.55vw, 9px);
+      font-weight: 500;
+      letter-spacing: 0;
+      line-height: 1.4;
+      white-space: nowrap;
+      pointer-events: none;
+    }
+
+    .hotspot {
+      position: absolute;
+      z-index: 3;
       display: block;
       color: transparent;
       text-decoration: none;
@@ -85,6 +99,7 @@
   <main class="page" aria-label="STUDY GROUP 青谷会 Ceramist Course 2026 / 2027">
     <span id="curriculum" aria-hidden="true"></span>
     <img class="comp" src="aoyakai-comp.png" alt="STUDY GROUP 青谷会 Ceramist Course 2026 / 2027 講座ページ">
+    <div class="overview-material">※使用陶材：GC Initial Zr-FS</div>
 
     <a
       class="hotspot hero-entry"
