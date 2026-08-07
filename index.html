@@ -51,6 +51,82 @@
       pointer-events: none;
     }
 
+    .heading-cover {
+      position: absolute;
+      z-index: 2;
+      left: 5.2%;
+      width: 42%;
+      height: 1.55%;
+      background: #000;
+      pointer-events: none;
+    }
+
+    .section-heading {
+      position: absolute;
+      z-index: 3;
+      left: 5.55%;
+      pointer-events: none;
+    }
+
+    .section-heading .eyebrow {
+      display: block;
+      margin: 0 0 1.05em;
+      color: var(--accent);
+      font-size: clamp(7px, 0.78vw, 12px);
+      font-weight: 700;
+      line-height: 1;
+      letter-spacing: 0;
+      text-transform: uppercase;
+    }
+
+    .section-heading .title {
+      display: block;
+      margin: 0;
+      color: #fff;
+      font-size: clamp(18px, 2.2vw, 35px);
+      font-weight: 700;
+      line-height: 1.18;
+      letter-spacing: 0;
+    }
+
+    .cover-overview,
+    .heading-overview {
+      top: 17.02%;
+    }
+
+    .cover-curriculum,
+    .heading-curriculum {
+      top: 25.82%;
+    }
+
+    .cover-instructor,
+    .heading-instructor {
+      top: 69.55%;
+    }
+
+    .cover-schedule {
+      top: 80.12%;
+      height: 0.9%;
+    }
+
+    .heading-schedule {
+      top: 80.18%;
+    }
+
+    .cover-fee,
+    .heading-fee {
+      top: 86.02%;
+    }
+
+    .cover-access,
+    .heading-access {
+      top: 93.0%;
+    }
+
+    .heading-schedule .title {
+      margin-top: 0;
+    }
+
     .hotspot {
       position: absolute;
       z-index: 3;
@@ -99,6 +175,35 @@
   <main class="page" aria-label="STUDY GROUP 青谷会 Ceramist Course 2026 / 2027">
     <span id="curriculum" aria-hidden="true"></span>
     <img class="comp" src="aoyakai-comp.png" alt="STUDY GROUP 青谷会 Ceramist Course 2026 / 2027 講座ページ">
+    <div class="heading-cover cover-overview" aria-hidden="true"></div>
+    <div class="section-heading heading-overview" aria-hidden="true">
+      <span class="eyebrow">COURSE OVERVIEW</span>
+      <span class="title">講座概要</span>
+    </div>
+    <div class="heading-cover cover-curriculum" aria-hidden="true"></div>
+    <div class="section-heading heading-curriculum" aria-hidden="true">
+      <span class="eyebrow">CURRICULUM</span>
+      <span class="title">全5回カリキュラム</span>
+    </div>
+    <div class="heading-cover cover-instructor" aria-hidden="true"></div>
+    <div class="section-heading heading-instructor" aria-hidden="true">
+      <span class="eyebrow">INSTRUCTOR</span>
+      <span class="title">講師プロフィール</span>
+    </div>
+    <div class="heading-cover cover-schedule" aria-hidden="true"></div>
+    <div class="section-heading heading-schedule" aria-hidden="true">
+      <span class="title">日程</span>
+    </div>
+    <div class="heading-cover cover-fee" aria-hidden="true"></div>
+    <div class="section-heading heading-fee" aria-hidden="true">
+      <span class="eyebrow">FEE</span>
+      <span class="title">受講料・再受講制度</span>
+    </div>
+    <div class="heading-cover cover-access" aria-hidden="true"></div>
+    <div class="section-heading heading-access" aria-hidden="true">
+      <span class="eyebrow">ACCESS</span>
+      <span class="title">会場</span>
+    </div>
     <div class="overview-material">※使用陶材：GC Initial Zr-FS</div>
 
     <a
