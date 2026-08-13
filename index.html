@@ -46,14 +46,15 @@
       background: transparent;
     }
 
-    .hotspot:focus-visible {
+    .hotspot:focus-visible,
+    .contact-mail:focus-visible {
       outline: 2px solid var(--accent);
       outline-offset: 4px;
     }
 
     #curriculum {
       position: absolute;
-      top: 28.9%;
+      top: 24.0%;
       left: 0;
       width: 1px;
       height: 1px;
@@ -61,23 +62,41 @@
 
     .hero-entry {
       left: 5.55%;
-      top: 11.78%;
-      width: 20.1%;
-      height: 1.1%;
+      top: 11.55%;
+      width: 21.2%;
+      height: 1.2%;
     }
 
     .hero-curriculum {
       left: 28.0%;
-      top: 11.93%;
-      width: 14.0%;
-      height: 0.9%;
+      top: 11.75%;
+      width: 16.3%;
+      height: 1.05%;
     }
 
     .bottom-entry {
-      left: 8.5%;
-      top: 96.35%;
-      width: 25.0%;
-      height: 1.05%;
+      left: 9.4%;
+      top: 95.55%;
+      width: 26.9%;
+      height: 1.0%;
+    }
+
+    .contact-mail {
+      position: absolute;
+      z-index: 3;
+      left: 9.4%;
+      top: 96.72%;
+      color: rgba(255, 255, 255, 0.7);
+      font-size: clamp(9px, 0.8vw, 13px);
+      font-weight: 400;
+      line-height: 1.5;
+      letter-spacing: 0;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+
+    .contact-mail span {
+      color: rgba(255, 255, 255, 0.52);
     }
   </style>
 </head>
@@ -107,6 +126,12 @@
       rel="noopener noreferrer"
       aria-label="申し込み・問い合わせフォームを開く"
     >申し込み・問い合わせ</a>
+
+    <a
+      class="contact-mail"
+      href="mailto:aoyakai.practice@gmail.com"
+      aria-label="お問い合わせメールを送る"
+    ><span>お問い合わせ：</span>aoyakai.practice@gmail.com</a>
   </main>
 </body>
 </html>
