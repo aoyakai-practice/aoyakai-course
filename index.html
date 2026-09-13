@@ -5,6 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>STUDY GROUP 青谷会 Ceramist Course 2026 / 2027</title>
   <meta name="description" content="STUDY GROUP 青谷会 Ceramist Course 2026 / 2027 の講座ページです。">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-MW201NR96S"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-MW201NR96S');
+  </script>
   <style>
     :root {
       --accent: #ff2b86;
@@ -87,11 +94,12 @@
     <img class="comp" src="aoyakai-comp.png" alt="STUDY GROUP 青谷会 Ceramist Course 2026 / 2027 講座ページ">
 
     <a
-      class="hotspot hero-entry"
+      class="hotspot hero-entry js-form-link"
       href="https://docs.google.com/forms/d/1jF5JlowhokZSTPycWmJN576sh88Nunu4ZLHNBvU6hb4/viewform"
       target="_blank"
       rel="noopener noreferrer"
       aria-label="申し込み・問い合わせフォームを開く"
+      data-form-position="hero"
     >申し込み・問い合わせ</a>
 
     <a
@@ -101,12 +109,27 @@
     >カリキュラムを見る</a>
 
     <a
-      class="hotspot bottom-entry"
+      class="hotspot bottom-entry js-form-link"
       href="https://docs.google.com/forms/d/1jF5JlowhokZSTPycWmJN576sh88Nunu4ZLHNBvU6hb4/viewform"
       target="_blank"
       rel="noopener noreferrer"
       aria-label="申し込み・問い合わせフォームを開く"
+      data-form-position="bottom"
     >申し込み・問い合わせ</a>
   </main>
+
+  <script>
+    document.querySelectorAll('.js-form-link').forEach(function(link) {
+      link.addEventListener('click', function() {
+        if (typeof gtag !== 'function') return;
+
+        gtag('event', 'aoyakai_form_click', {
+          event_category: 'engagement',
+          event_label: link.dataset.formPosition || 'unknown',
+          link_url: link.href
+        });
+      });
+    });
+  </script>
 </body>
 </html>
